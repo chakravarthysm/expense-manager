@@ -1,3 +1,4 @@
+const NODE_ENV = process.env.NODE_ENV || 'production';
 module.exports = {
   entry: ['./src/index.js'],
   output: {
@@ -5,7 +6,7 @@ module.exports = {
     publicPath: '/',
     filename: 'bundle.js',
   },
-  devtool: 'eval-source-map',
+  devtool: NODE_ENV === 'production' ? '' : 'eval-source-map',
   module: {
     loaders: [
       {
