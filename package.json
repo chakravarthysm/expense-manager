@@ -22,8 +22,11 @@
   },
   "dependencies": {
     "babel-preset-stage-1": "^6.1.18",
+    "date-fns": "^1.29.0",
     "lodash": "^3.10.1",
+    "moment": "^2.22.2",
     "react": "16.3.2",
+    "react-big-calendar": "^0.20.1",
     "react-dom": "16.3.2",
     "react-redux": "5.0.7",
     "react-router": "^4.3.1",
