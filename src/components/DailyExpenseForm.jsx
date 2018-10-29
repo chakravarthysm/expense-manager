@@ -59,7 +59,7 @@ class DailyExpenseForm extends Component {
 }
 
 const dailyExpenseForm = reduxForm({
-    form: 'dailyExpenseForm'
+    form: 'dailyExpenseForm',
 })(DailyExpenseForm);
 
 function mapDispatchToProps(dispatch) {

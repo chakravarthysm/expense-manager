@@ -4,7 +4,7 @@ import expenseReducer from './expense';
 
 const rootReducer = combineReducers({
   form: formReducer,
-  expense: expenseReducer
+  expense: expenseReducer,
 });
 
 export default rootReducer;
