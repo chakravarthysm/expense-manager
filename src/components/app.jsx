@@ -9,9 +9,6 @@ export default class App extends Component {
         <div className="col-md-12">
           <DailyExpenseForm />
         </div>
-        <div className="col-md-12">
-          <Calendar />
-        </div>
       </div>
     );
   }
