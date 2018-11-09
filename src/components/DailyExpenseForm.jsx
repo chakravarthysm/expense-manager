@@ -20,6 +20,15 @@ class DailyExpenseForm extends Component {
             selectedDate: new Date()
         };
         this.saveExpense  =this.saveExpense.bind(this);
+        this.renderExpenses = this.renderExpenses.bind(this);
+    }
+
+    componentWillMount() {
+        this.props.expenseActions.fetchExpenses();
+    }
+
+    renderExpenses() {
+        return JSON.stringify(this.props.expense)
     }
 
     onDateClick = userSelectedDate => {
@@ -89,6 +98,9 @@ class DailyExpenseForm extends Component {
                             </div>
                             <div className="form-group col-md-6">
                                 <strong>{selectedDate ? humanizeDate(selectedDate, '[Selected date is] Do of MMMM, YYYY') : 'Please choose a date !'}</strong>
+                            </div>
+                            <div>
+                                {this.renderExpenses()}
                             </div>
                         </form>
                     </div>

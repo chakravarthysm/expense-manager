@@ -10,4 +10,4 @@ const config = {
   };
   firebase.initializeApp(config);
 
-export const databse = firebase.database().ref('expenses/');
+export const database = firebase.database().ref('expenses/');
